@@ -1,0 +1,5 @@
+node_modules/
+vendor/
+/public/theme/*
+/public/theme/**
+/public/theme/
