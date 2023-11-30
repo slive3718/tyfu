@@ -1,32 +1,35 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$ci_controller = $this->router->fetch_class();
-$ci_method = $this->router->fetch_method();
-?>
-
-<!-- Control Sidebar -->
-<aside class="control-sidebar control-sidebar-dark">
-	<!-- Control sidebar content goes here -->
-</aside>
-<!-- /.control-sidebar -->
-
-<!-- Main Footer -->
-<footer
-		class="main-footer"
-		<?=($ci_controller == 'sessions' && $ci_method == 'view')?'style="margin-left: unset !important;"':''?>
->
-	<strong>Copyright &copy; 2021 <a href="https://yourconference.live">Your Conference Live</a>. </strong>
-	<div id="attendeesOnline" class="float-right d-none d-sm-inline-block"> <!-- Filled by JS only in sessions/view pages -->
-
-	</div>
-<!--	<div class="float-right d-none d-sm-inline-block">-->
-<!--		<b>Version</b> 3.1.0-->
-<!--	</div>-->
+<!-- footer start-->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 footer-copyright text-center">
+                <p class="mb-0">Copyright 2021 © Cuba theme by pixelstrap  </p>
+            </div>
+        </div>
+    </div>
 </footer>
 </div>
-<!-- ./wrapper -->
-
+</div>
+<!-- latest jquery-->
+<script src="<?=base_url()?>theme/assets/js/jquery-3.5.1.min.js"></script>
+<!-- Bootstrap js-->
+<script src="<?=base_url()?>theme/assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+<!-- feather icon js-->
+<script src="<?=base_url()?>theme/assets/js/icons/feather-icon/feather.min.js"></script>
+<script src="<?=base_url()?>theme/assets/js/icons/feather-icon/feather-icon.js"></script>
+<!-- scrollbar js-->
+<script src="<?=base_url()?>theme/assets/js/scrollbar/simplebar.js"></script>
+<script src="<?=base_url()?>theme/assets/js/scrollbar/custom.js"></script>
+<!-- Sidebar jquery-->
+<script src="<?=base_url()?>theme/assets/js/config.js"></script>
+<!-- Plugins JS start-->
+<script src="<?=base_url()?>theme/assets/js/sidebar-menu.js"></script>
+<script src="<?=base_url()?>theme/assets/js/tooltip-init.js"></script>
+<!-- Plugins JS Ends-->
+<!-- Theme js-->
+<script src="<?=base_url()?>theme/assets/js/script.js"></script>
+<script src="<?=base_url()?>theme/assets/js/theme-customizer/customizer.js"></script>
+<!-- login js-->
+<!-- Plugin used-->
 </body>
 </html>
-
-
